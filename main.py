@@ -55,7 +55,7 @@ while True:
     palabra=""
 
     almacenamiento=open("Almacenamiento.txt","a")
-    json=json.dumps(pal.__dict__)
-    almacenamiento.write(json+"\n")
-    enqueue_Message(json)
+    extejson=json.dumps(pal.__dict__)
+    almacenamiento.write(extejson+"\n")
+    enqueue_Message(extejson)
     almacenamiento.close()
